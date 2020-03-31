@@ -3,7 +3,7 @@
 <html>
 <head>
 	
-	<title>Corona Detector</title>
+	<title>Corona-Detection</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="icon.js"></script>
     <script src="app.js"></script>
-    <link rel="stylesheet" href="css.css"></script>
+    <link rel="stylesheet" href="style.css"></script>
 	
 </head>
 <body>
@@ -24,12 +24,12 @@
            </div>
        </div>
        <div class="row">
-            <div class="col-md-6">
-                <div class="form-inline form-group">
+            <div class="col-md-12">
+                <div class="form-inline form-group" >
                     <input 
                     class       = "form-control"
                     id          = 'location'
-                    placeholder = "masukan kabupaten anda"/>
+                    placeholder = "cari kota / kabupaten"/>
                     <button class="btn btn-primary" onclick="findLocation()">
                         Cari
                     </button>
@@ -38,30 +38,26 @@
                     <div id="mapid" class="main-maps" style="height:300px; width:100%"></div>
                 </div>
             </div>
-           <div class="col-md-6 pad-header">
+        </div>
+        <div class="row">
+           <div class="col-md-12 pad-header" text-align="center">
              
                 <div class="text-center">
                     <div id="your_location"></div>
                 </div>
-                <p>
-                    <input type="checkbox" id="auto_update"/>
-                    <label for="auto_update">Jalankan Auto Update</label>
-                </p>
                 <hr>
                 <p>Info:</p>
-                <ul>
-                    <li>Biru  = Orang Dalam Pengawasan</li>
-                    <li>Orange  = Pasien Dalam Pengawasan</li>
-                    <li>Merah  = Positif</li>
+                <ul type="square">
+                    <li>Biru  = ODP (Orang dalam pengawasan)</li>
+                    <li>Orange  = PDP (Pasien dalam pengawasan)</li>
+                    <li>Merah  = Positif Covid-19</li>
                 </ul>
-
-                <blockquote>
-                    <p> Sumber Informasi : <a href="http://pikobar.jabarprov.go.id/ ">http://pikobar.jabarprov.go.id/ </a></p>
-                    <p> Developer : <a href="https://twitter.com/NaetaAgit">@NaetaAgit</a></p>
-                </blockquote>
+                    <p> Sumber : <a href="http://pikobar.jabarprov.go.id/ ">http://pikobar.jabarprov.go.id/ </a></p>
            </div>
-         
        </div>
+       <div class="footer-copyright text-center py-3">© 2020 Powered by:
+        <a href="https://info-rian.github.io"> Rian Septiana</a> | API Master: <a href="https://twitter.com/NaetaAgit">Om Agit</a>
+      </div>
    </div> 
 </body>
 </html>
