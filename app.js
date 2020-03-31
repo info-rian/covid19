@@ -27,7 +27,7 @@ function run(response){
         
     },(error)=>{
         $('#your_location').html(`<h3> Device anda tidak mengizinkan / terjadi kesalahan.
-        <p> <a href="https://github.com/agitnaeta/covid19/issues/new" target="_top">
+        <p> <a href="https://github.com/info-rian/covid19/issues/new" target="_top">
         Laporkan Bug
             </a></p>
         </h3>`)
